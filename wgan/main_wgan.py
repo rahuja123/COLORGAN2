@@ -16,7 +16,7 @@ tf.app.flags.DEFINE_boolean("visualize", False, "True for visualizing, False for
 
 ##training setting
 tf.app.flags.DEFINE_boolean("is_train", True, "True for training, False for testing [False]")
-tf.app.flags.DEFINE_integer("batch_size", 64, "The size of batch images")
+tf.app.flags.DEFINE_integer("batch_size", 16, "The size of batch images")
 tf.app.flags.DEFINE_integer("epoch", 100, "Epoch to train [25]")
 tf.app.flags.DEFINE_boolean("b_loadcheckpoint", False, "b_loadcheckpoint")
 tf.app.flags.DEFINE_integer("sample_times", 3, "sample_times")
@@ -40,7 +40,7 @@ tf.app.flags.DEFINE_integer("test_offset", 0, "test_offset(<1000)")
 
 ##params for preprocess and model setting
 tf.app.flags.DEFINE_string("color_space", "YUV", "Color space [YUV,RGB]")
-tf.app.flags.DEFINE_integer("image_size", 256, "The size of the output images to produce [256]")
+tf.app.flags.DEFINE_integer("image_size", 128, "The size of the output images to produce [128]")
 tf.app.flags.DEFINE_integer("center_crop_size", 0, "The width of the images presented to the model, 0 for auto")
 tf.app.flags.DEFINE_boolean("is_crop", False, "True for training, False for testing [False]")
 tf.app.flags.DEFINE_integer("z_dim", 100, "z_dim")
